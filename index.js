@@ -5,7 +5,9 @@ const port = process.env.PORT || 3000;
 // this is the master list of messages.
 const messages = [];
 
+// allows us to serve files in the public/ folder as URLs
 app.use(express.static("public"));
+
 // allows us to process submitted form data
 app.use(express.urlencoded({ extended: true }));
 
